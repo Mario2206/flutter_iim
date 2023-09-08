@@ -67,10 +67,10 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               children: [
                 verticalSpace(50),
-                Text("Let's sign you in.", style: titleStyle),
+                const Text("Let's sign you in.", style: ThemeTextStyle.titleStyle),
                 verticalSpace(20),
-                Text("Welcome back.", style: subtitleStyle),
-                Text("You've been missed!", style: subtitleStyle),
+                const Text("Welcome back.", style: ThemeTextStyle.subtitleStyle),
+                const Text("You've been missed!", style: ThemeTextStyle.subtitleStyle),
                 Image.asset('assets/login.jpg', height: 250),
                 verticalSpace(20),
                 UserForm(
@@ -79,7 +79,7 @@ class _LoginPageState extends State<LoginPage> {
                     passwordController: passwordController,
                     submit: authenticate),
                 TextButton(
-                    onPressed: signUp, child: Text("No account ? Sign up"))
+                    onPressed: signUp, child: const Text("No account ? Sign up"))
               ],
             ),
           ))

@@ -66,7 +66,7 @@ class UserForm extends StatelessWidget {
             ),
             ElevatedButton(
                 onPressed: submit,
-                child: Text(buttonText, style: submitButtonStyle)),
+                child: Text(buttonText, style: ThemeTextStyle.submitButtonStyle)),
           ],
         ));
   }

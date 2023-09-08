@@ -37,7 +37,7 @@ class _RegisterPageState extends State<RegisterPage> {
             padding: const EdgeInsets.all(20.0),
             child: Column(children: [
               verticalSpace(50),
-              Text("Let's sign up.", style: titleStyle),
+              const Text("Let's sign up.", style: ThemeTextStyle.titleStyle),
               verticalSpace(20),
               Image.asset('assets/register.jpg', height: 250),
               verticalSpace(20),

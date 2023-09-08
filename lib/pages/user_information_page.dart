@@ -43,7 +43,8 @@ class _UserInformationPageState extends State<UserInformationPage> {
             title: Text(isNewUser
                 ? "New user created"
                 : "Your profile has been updated"),
-            content: Column(children: [
+            content: Column(
+              children: [
               Text("Username : ${user.userName}"),
               verticalSpace(20),
               Text("Password : ${user.userPassword}"),
@@ -112,14 +113,14 @@ class _UserInformationPageState extends State<UserInformationPage> {
                     children: [
                       Text(
                         'Hello $userName',
-                        style: titleStyle,
+                        style: ThemeTextStyle.titleStyle,
                       ),
                       verticalSpace(20),
                       Row(
                         children: [
                           Text(
                             "User ID: $userId",
-                            style: subtitleStyle,
+                            style: ThemeTextStyle.subtitleStyle,
                           )
                         ],
                       ),
@@ -128,7 +129,7 @@ class _UserInformationPageState extends State<UserInformationPage> {
                         children: [
                           Text(
                             "ID: $id",
-                            style: subtitleStyle,
+                            style: ThemeTextStyle.subtitleStyle,
                           )
                         ],
                       ),
@@ -146,9 +147,9 @@ class _UserInformationPageState extends State<UserInformationPage> {
                               style: ElevatedButton.styleFrom(
                                   backgroundColor: Colors.orange),
                               onPressed: register,
-                              child: Text(
+                              child: const Text(
                                 "Register",
-                                style: submitButtonStyle,
+                                style: ThemeTextStyle.submitButtonStyle,
                               ))
                         ],
                       ),
