@@ -1,4 +1,4 @@
-import 'package:rendu/models/User.dart';
+import 'package:rendu/models/user.dart';
 import 'package:rendu/repositories/user_repository.dart';
 
 class UserService {

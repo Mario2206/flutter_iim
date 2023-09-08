@@ -1,6 +1,6 @@
 
-import 'package:rendu/database/DatabaseConnection.dart';
-import 'package:rendu/models/User.dart';
+import 'package:rendu/database/database_connection.dart';
+import 'package:rendu/models/user.dart';
 import 'package:sqflite/sqflite.dart';
 
 class UserRepository {

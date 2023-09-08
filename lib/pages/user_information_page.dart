@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rendu/models/User.dart';
+import 'package:rendu/models/user.dart';
 import 'package:rendu/services/user_service.dart';
 import 'package:rendu/utils/spacing.dart';
 import 'package:rendu/utils/text_style.dart';
